@@ -1,9 +1,10 @@
 //Simple weather app
 
+"use strict";
+
 document.querySelector('button').addEventListener('click', () => {
   newCity.getLocation();
 })
-
 
 document.querySelector("#reset").addEventListener("click", () => {
   newCity.clearWeatherData();
@@ -72,7 +73,7 @@ class weatherApp {
       
         })
         .catch(err => {
-            console.log(`error ${err}`)
+            console.log(`error ${err}`);
         });
      }
 
@@ -106,7 +107,7 @@ class weatherApp {
       document.querySelector(".header p").innerText = localStorage.getItem("locationHeader");
       //weather:
       const weatherData = JSON.parse(localStorage.getItem("weatherData"));
-      console.log(weatherData, "localStorage")
+      console.log(weatherData, "localStorage");
 
       let dayNum = 1;
       for (let dailyData of weatherData) {
