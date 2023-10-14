@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Simple weather app">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Weather app</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<header class="flex">
+			<h1>Simple Weather App - 5 day forecast</h1>
+			<input type="text" name="search-bar" value="" placeholder="Input Name of City">
+			<button type="button" name="button" id="show-weather" aria-label="Get a 5 day simple forecast for a chosen city">Show Weather</button>
+			<button typde="button" id="reset">Reset Data</button>
+		</header>
+
+		<main class="flex">
+
+			<section class="header">
+				<p></p>
+			</section>
+
+			<section class="forecast hidden">
+
+				<section id="day1" class="day">
+					<h2 class="date"></h2>
+					<h3 class="weather"></h3>
+					<p class="tempMax"></p>
+					<p class="tempMin"></p>
+				</section>
+
+				<section id="day2" class="day">
+					<h2 class="date"></h2>
+					<h3 class="weather"></h3>
+					<p class="tempMax"></p>
+					<p class="tempMin"></p>
+				</section>
+
+				<section id="day3" class="day">
+					<h2 class="date"></h2>
+					<h3 class="weather"></h3>
+					<p class="tempMax"></p>
+					<p class="tempMin"></p>
+				</section>
+
+				<section id="day4" class="day">
+					<h2 class="date"></h2>
+					<h3 class="weather"></h3>
+					<p class="tempMax"></p>
+					<p class="tempMin"></p>
+				</section>
+
+				<section id="day5" class="day">
+					<h2 class="date"></h2>
+					<h3 class="weather"></h3>
+					<p class="tempMax"></p>
+					<p class="tempMin"></p>
+				</section>
+
+			</section>
+		</main>
+
+		
+
+		
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

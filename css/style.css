@@ -1,0 +1,118 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+html, body {
+  height: 100dvh;
+  background: linear-gradient(lightyellow, lightblue);
+  font-family: 'AR One Sans', sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+button {
+  box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.473);
+  margin: 0.2% 0.2%;
+}
+
+button:hover {
+  background: rgba(221, 189, 6, 0.25);
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 50%;
+  max-width: 600px;
+  gap: 0.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.day {
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-rows: 1fr;
+  background: rgba(255, 255, 255, 0.884);
+  box-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.308);
+
+}
+
+.day h2 {
+ font-size: clamp(1em, 1.1dvw, 1.6em);
+}
+
+.day h3 {
+  font-size: clamp(0.9em,1dvw, 1.5em);
+}
+
+.day p {
+  font-size: clamp(0.8em, 0.9dvw, 1.5em);
+}
+
+.day > * {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.tempMin {
+  color: rgb(29, 16, 143);
+  font-weight: 700;
+}
+
+.tempMax {
+  color: rgb(146, 9, 9);
+  font-weight: 700;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media screen and (max-width: 950px) {
+
+  .forecast {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+
+  .forecast {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
