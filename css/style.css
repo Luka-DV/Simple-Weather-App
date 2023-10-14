@@ -3,7 +3,7 @@
 /*******************************************/
 
 /* Box Model Hack */
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -63,7 +63,6 @@ button:hover {
   grid-auto-rows: 1fr;
   background: rgba(255, 255, 255, 0.884);
   box-shadow: 0.2em 0.2em 0 rgba(0, 0, 0, 0.308);
-
 }
 
 .day h2 {
