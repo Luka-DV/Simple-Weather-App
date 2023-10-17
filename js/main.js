@@ -20,7 +20,7 @@ class weatherApp {
 
   async getLocation() {
     const choice = document.querySelector('input').value
-    const url = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=LjV7oCVZtTOW5rxriX4N73BRqKIlZ41M&q=${choice}`
+    const url = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=LjV7oCVZtTOW5rxriX4N73BRqKIlZ41M&q=${choice}`
 
     await this.clearLocalStorage();
   
@@ -45,7 +45,7 @@ class weatherApp {
 
   getWeather(key) {
 
-    const url = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=LjV7oCVZtTOW5rxriX4N73BRqKIlZ41M&metric=true`
+    const url = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${key}?apikey=LjV7oCVZtTOW5rxriX4N73BRqKIlZ41M&metric=true`
 
       fetch(url)
         .then(res => res.json()) // parse response as JSON
