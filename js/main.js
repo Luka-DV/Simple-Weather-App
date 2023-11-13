@@ -22,7 +22,7 @@ class weatherApp {
     const choice = document.querySelector('input').value
     const url = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=LjV7oCVZtTOW5rxriX4N73BRqKIlZ41M&q=${choice}`
 
-    await this.clearLocalStorage();
+    this.clearLocalStorage();
   
     fetch(url)
         .then(res => res.json()) // parse response as JSON
